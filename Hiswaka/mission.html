@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mission et Partenaires - HISWACA Congo</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "congo-green": "#009543",
+            "congo-yellow": "#FBDE4A",
+            "congo-red": "#DC241F",
+            "congo-blue": "#0033A1", // A blue to complement the theme
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .congo-stripe-decoration {
+        position: relative;
+        overflow: hidden;
+    }
+    .congo-stripe-decoration::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background-image: linear-gradient(to right, #009543 33.33%, #FBDE4A 33.33%, #FBDE4A 66.66%, #DC241F 66.66%);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex h-14 items-center justify-between border-b border-slate-200/80 bg-background-light/80 px-4 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<button class="flex size-10 items-center justify-center rounded-full text-slate-800 hover:bg-slate-200 dark:text-slate-200 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-lg font-bold text-slate-900 dark:text-slate-100">Mission et Partenaires</h1>
+<div class="size-10"></div> 
+</header>
+<main class="flex-1 px-4 py-6">
+<div class="rounded-xl border border-congo-green/30 bg-white p-6 shadow-sm dark:border-congo-green/50 dark:bg-slate-900 congo-stripe-decoration">
+<h2 class="text-2xl font-bold leading-tight tracking-tight text-congo-green dark:text-congo-yellow">Notre Mission</h2>
+<p class="mt-2 text-base font-normal leading-relaxed text-slate-600 dark:text-slate-400">
+          L'objectif principal du projet HISWACA est d'harmoniser les données statistiques nationales du Congo pour améliorer la cohérence, la comparabilité et l'accessibilité des informations, soutenant ainsi une prise de décision éclairée.
+        </p>
+</div>
+<h3 class="mt-10 text-[22px] font-bold leading-tight tracking-tight text-slate-900 dark:text-slate-100">Nos Partenaires</h3>
+<div class="mt-4 flex flex-col gap-3">
+<div class="flex items-center gap-4 rounded-xl bg-white p-4 dark:bg-slate-900">
+<div class="flex size-16 shrink-0 items-center justify-center rounded-lg bg-congo-blue/10 p-2 dark:bg-congo-blue/20">
+<img class="h-full w-full object-contain" data-alt="Logo de La Banque Mondiale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdhTTG9s9nfmbSbVLI7Sm9-FutykYrLcgR1lCq4iu0qgSmRh7JPyu1qCmbTopzHd-rEdkOaJ-YbBJFKhDEKwW3vXRizpG930sPJxRJg9QFuz31l148bwAuHUIhnY8p8QYQYUEw76rB3wGEVIb3DBoyIcHql198OUKOyuVVqci82jWGKaR-LXnd12YLn5vezLy7GXncu7sc-x9NYPElr6n1l0bLrzjKWdrQGCRG8IMervFunal2hELN1p09Dh587gtPTSiVBR-BN6Y"/>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-slate-900 dark:text-slate-100">La Banque Mondiale</p>
+<p class="mt-1 text-sm font-normal text-slate-500 dark:text-slate-400">
+              Principal bailleur de fonds, assurant le financement et le soutien stratégique.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white p-4 dark:bg-slate-900">
+<div class="flex size-16 shrink-0 items-center justify-center rounded-lg bg-congo-red/10 p-2 dark:bg-congo-red/20">
+<img class="h-full w-full object-contain" data-alt="Logo de l'Institut National de la Statistique du Congo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPq-tPLXR7bLe590DKGq1-GOVk5bow0wu0FYC-b7i8Xnwb5MIiEoRp9SDREVoHPZOU7Cba2qcK5CI4oYHqU9sWeb51Aj5SpoFz4yIGYa_USHgctaz7ht0JMIvZuUpdTAuxC1RgIZqsalumrMNDX5GoJ_C92Xk3nqkTQseX3szXyukId80zmNPVlnBvcANQ7bn5WZxp01ZY6Obs-706dEDIfG1F4MJAjuWMwkvDs_3Svt1DEtMN5iV3IHPoRUHkZRHZ_ODpCLNee8"/>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-slate-900 dark:text-slate-100">INS-Congo</p>
+<p class="mt-1 text-sm font-normal text-slate-500 dark:text-slate-400">
+              Institut National de la Statistique, acteur clé de la collecte et de la production des données.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white p-4 dark:bg-slate-900">
+<div class="flex size-16 shrink-0 items-center justify-center rounded-lg bg-congo-yellow/20 p-2 dark:bg-congo-yellow/30">
+<img class="h-full w-full object-contain" data-alt="Logo du projet PRATIC" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbXV2d9WAZFWHGWyDCwJT-Xw3_IxUM9gTQ-eb6qNVchkVhyb_O3vjxp9AERNxP8jsWjCdiYw-JCHXZGQ9gyTBYY9xaevzDjkZbhVfI3tEUe5vC7yeowvHnzjEMGlUNhSPkZ0M1BqkJ6m46C94mLLMRuwzWBY9hijMqrfQKn2Dgnq7R5MNVKBT3XWAT3sorwfH2ZjJsMR-FclsULyPL-Tac_nDy024SVui9bCATedmlVJs8FtBIUPnlPe_eokXtmbcl1fRDkQU_mJ8"/>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-slate-900 dark:text-slate-100">PRATIC</p>
+<p class="mt-1 text-sm font-normal text-slate-500 dark:text-slate-400">
+              Partenaire pour le renforcement des infrastructures technologiques et numériques.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white p-4 dark:bg-slate-900">
+<div class="flex size-16 shrink-0 items-center justify-center rounded-lg bg-congo-green/10 p-2 dark:bg-congo-green/20">
+<img class="h-full w-full object-cover" data-alt="Drapeau de la République du Congo représentant le Ministère du Plan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGB--vAQeVM5Hknmf93umBSR_pO11Mf2XzjvDppk30-c_cr36-ewc6kS6VSE8c1r4Mkcn0T0rSRbbE27yGG-QNhY82qrcNKeojTkbxmTuo44Xl4GILOfTUC2K4j-9d9M5H_yFhRpZJu9xtvn6409nzDUL_hNYztSCxR_DmCEcdo6O2cJ6-eE5N7HluC_wFT3CmQmO3RnJaQxscSPkxBcUrYniPDMBIiJDajqHo11evWWE2e7hhYrZmCnwy4ddIuCDzsAib5OKIWlY"/>
+</div>
+<div class="flex-1">
+<p class="text-base font-medium text-slate-900 dark:text-slate-100">Ministère du Plan</p>
+<p class="mt-1 text-sm font-normal text-slate-500 dark:text-slate-400">
+              Assure la tutelle institutionnelle et l'alignement avec les stratégies nationales.
+            </p>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

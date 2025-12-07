@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accueil Principal - HISWACA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+            "congo-blue": "#00247D",
+            "congo-green": "#009543",
+            "congo-yellow": "#FDD116",
+            "congo-red": "#DE0000",
+            "text-light": "#1C1C1E",
+            "text-dark": "#E5E7EB",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1F2937",
+            "border-light": "#E5E7EB",
+            "border-dark": "#374151"
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="absolute top-0 left-0 right-0 z-20 flex items-center justify-between p-4">
+<div class="flex items-center gap-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8" data-alt="HISWACA Congo logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDknFs7QieADpyin-ZyIRFEbBPe54kXuKu6426Sk523J_ltNh-c2HJK6eCBlDPHI_YR2ZzYl4_4esCNvpmBRQ-CRVGWgbbIQE4vAc2EZo724LXW7cwuSMNBfok3hYgOhcQNmpI679-ozWjcjtPj1yY0EuqA4oBUqRKdFWL-45bzQvAu5sINPOrW-sa4qMMQ2tV9Q3MHugxoTT2IXi7BJVgaxDAlYNONGps6noO_ou9QuwjCTIhdlYtVwjtSJute7IP7fT8xi_NE0Y8");'></div>
+<span class="text-white text-lg font-bold">HISWACA</span>
+</div>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-white/20 text-white backdrop-blur-sm">
+<span class="material-symbols-outlined text-2xl">person</span>
+</button>
+</header>
+<main class="flex-grow pb-24">
+<div class="relative h-[420px] pt-16 text-white">
+<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiAXb8JqeW7Ai--pxR7Ttj-aT89pR6fzIfNugkNCDYFaZwbZn35MrZVOAIkXhzGNS-BVyd1Z_pnl3SBfDGjvwaDeRPyCIpLyCmNVmTf-bwmdbOVYCq_HGx2f7-dB3Lk70eAMcGXcLUH8HsszDP7h3V57nmo46E-zFXgmSuOegy9M_mXNhYt1igveWz5Xp6psGpiM7ozZG1xvUahz34IScwxD8HYfbCPUgba8G-kmTRQggHqb73IJRDgCJpiC3SSJrF1O0UaPsXMpc');">
+<div class="absolute inset-0 bg-congo-blue/80 backdrop-brightness-75"></div>
+</div>
+<div class="relative z-10 flex h-full flex-col justify-between p-6">
+<div>
+<h1 class="text-3xl font-bold tracking-tight">Portail de Données Statistiques du Congo</h1>
+<p class="mt-2 text-white/80">Explorez, visualisez et analysez les données clés de la nation.</p>
+</div>
+<div class="relative">
+<input class="w-full rounded-full border-none bg-white/20 py-3 pl-12 pr-4 text-white placeholder-white/70 focus:ring-2 focus:ring-congo-yellow" placeholder="Rechercher un indicateur..." type="text"/>
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-white">search</span>
+</div>
+</div>
+</div>
+<div class="relative -mt-16 z-10">
+<div class="grid grid-cols-2 gap-4 p-4">
+<a class="flex flex-col items-center justify-center gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-4 shadow-lg h-36" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-congo-green/10">
+<span class="material-symbols-outlined text-3xl text-congo-green">bar_chart</span>
+</div>
+<p class="text-center text-sm font-bold text-text-light dark:text-text-dark">Indicateurs Clés</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-4 shadow-lg h-36" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-congo-red/10">
+<span class="material-symbols-outlined text-3xl text-congo-red">article</span>
+</div>
+<p class="text-center text-sm font-bold text-text-light dark:text-text-dark">Publications</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-4 shadow-lg h-36" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-congo-yellow/20">
+<span class="material-symbols-outlined text-3xl text-congo-yellow">public</span>
+</div>
+<p class="text-center text-sm font-bold text-text-light dark:text-text-dark">Cartes Interactives</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 rounded-2xl bg-card-light dark:bg-card-dark p-4 shadow-lg h-36" href="#">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-congo-blue/10">
+<span class="material-symbols-outlined text-3xl text-congo-blue">database</span>
+</div>
+<p class="text-center text-sm font-bold text-text-light dark:text-text-dark">Sources de Données</p>
+</a>
+</div>
+</div>
+<div class="px-4">
+<div class="flex flex-col gap-4 rounded-2xl bg-card-light dark:bg-card-dark p-4 shadow-lg">
+<h2 class="text-lg font-bold text-text-light dark:text-text-dark">Actualités Récentes</h2>
+<div class="flex flex-col gap-4">
+<a class="flex items-center gap-4" href="#">
+<div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-congo-red/10">
+<span class="material-symbols-outlined text-2xl text-congo-red">campaign</span>
+</div>
+<div>
+<p class="font-semibold text-text-light dark:text-text-dark">Lancement du Recensement Agricole National 2024</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">il y a 2 jours</p>
+</div>
+</a>
+<a class="flex items-center gap-4" href="#">
+<div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-congo-green/10">
+<span class="material-symbols-outlined text-2xl text-congo-green">school</span>
+</div>
+<div>
+<p class="font-semibold text-text-light dark:text-text-dark">Nouveau rapport sur les taux de scolarisation</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">il y a 1 semaine</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-10 flex h-20 items-center justify-around border-t border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<a class="flex flex-col items-center gap-1 text-congo-blue dark:text-congo-blue" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-bold">Accueil</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-xs font-medium">Données</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">article</span>
+<span class="text-xs font-medium">Rapports</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">menu</span>
+<span class="text-xs font-medium">Menu</span>
+</a>
+</nav>
+</div>
+</body></html>

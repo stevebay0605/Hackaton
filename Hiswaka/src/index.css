@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- COULEURS (Page 5 du PDF) --- */
+  /* Note: J'ai corrigé le vert incomplet du PDF (#4ba32) par #4ba320 qui est cohérent */
+  --color-hiswaca-green: #4ba320;
+  --color-hiswaca-yellow: #eee40d;
+  --color-hiswaca-red: #e41e12;
+  
+  /* --- TYPOGRAPHIE (Page 2 du PDF) --- */
+  /* Urban Shadow (Titres) -> On utilisera 'Oswald' ou une police impactante en fallback */
+  --font-display: "Oswald", "Impact", sans-serif;
+  
+  /* Myriad Pro Regular (Corps) -> 'Inter' ou 'Helvetica' sont de bons substituts modernes */
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+  
+  /* --- BACKGROUNDS --- */
+  --image-hero-pattern: url('/assets/pattern.svg'); /* Si on ajoute des motifs plus tard */
+}
+
+/* Optionnel : Import des polices Google si tu ne les as pas en local */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;700&display=swap');

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catalogue et Recherche de Données</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d92323", // Congo Red
+              "congo-green": "#009543",
+              "congo-yellow": "#ffcc00",
+              "congo-red": "#d92323",
+              "congo-blue": "#007bff",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+              "text-light": "#0d121b",
+              "text-dark": "#f8f9fc",
+              "subtext-light": "#4c669a",
+              "subtext-dark": "#aeb8d0",
+              "border-light": "#cfd7e7",
+              "border-dark": "#343e50",
+              "card-light": "#ffffff",
+              "card-dark": "#1a2231",
+              "input-light": "#e7ebf3",
+              "input-dark": "#2a3447"
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(248,249,252)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-text-light dark:text-text-dark">Catalogue de Données</h2>
+<div class="flex size-12 shrink-0 items-center justify-end"></div>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="flex items-center justify-center pl-4 rounded-l-lg border-r-0 bg-input-light dark:bg-input-dark text-subtext-light dark:text-subtext-dark">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 border-none h-full placeholder:text-subtext-light dark:placeholder:text-subtext-dark px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal bg-input-light dark:bg-input-dark text-text-light dark:text-text-dark" placeholder="Rechercher par mot-clé..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-col p-4 gap-3">
+<details class="flex flex-col rounded-lg border bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark px-[15px] py-[7px] group" open="">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Thème</p>
+<div class="text-text-light dark:text-text-dark group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined text-xl">expand_more</span>
+</div>
+</summary>
+<div class="pt-2 pb-1">
+<label class="flex gap-x-3 py-3 flex-row">
+<input checked="" class="h-5 w-5 rounded border-2 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0 text-congo-green checked:bg-congo-green checked:bg-[image:--checkbox-tick-svg] border-border-light dark:border-border-dark checked:border-congo-green focus:border-border-light dark:focus:border-border-dark" type="checkbox"/>
+<p class="text-base font-normal leading-normal text-text-light dark:text-text-dark">Santé</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row">
+<input class="h-5 w-5 rounded border-2 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0 text-congo-green checked:bg-congo-green checked:bg-[image:--checkbox-tick-svg] border-border-light dark:border-border-dark checked:border-congo-green focus:border-border-light dark:focus:border-border-dark" type="checkbox"/>
+<p class="text-base font-normal leading-normal text-text-light dark:text-text-dark">Éducation</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row">
+<input class="h-5 w-5 rounded border-2 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0 text-congo-green checked:bg-congo-green checked:bg-[image:--checkbox-tick-svg] border-border-light dark:border-border-dark checked:border-congo-green focus:border-border-light dark:focus:border-border-dark" type="checkbox"/>
+<p class="text-base font-normal leading-normal text-text-light dark:text-text-dark">Économie</p>
+</label>
+<label class="flex gap-x-3 py-3 flex-row">
+<input class="h-5 w-5 rounded border-2 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0 text-congo-green checked:bg-congo-green checked:bg-[image:--checkbox-tick-svg] border-border-light dark:border-border-dark checked:border-congo-green focus:border-border-light dark:focus:border-border-dark" type="checkbox"/>
+<p class="text-base font-normal leading-normal text-text-light dark:text-text-dark">Démographie</p>
+</label>
+</div>
+</details>
+<details class="flex flex-col rounded-lg border bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark px-[15px] py-[7px] group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Période (Année)</p>
+<div class="text-text-light dark:text-text-dark group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined text-xl">expand_more</span>
+</div>
+</summary>
+<div class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal pb-2 pt-2">
+<p>Contenu du filtre de période à venir.</p>
+</div>
+</details>
+<details class="flex flex-col rounded-lg border bg-background-light dark:bg-background-dark border-border-light dark:border-border-dark px-[15px] py-[7px] group">
+<summary class="flex cursor-pointer items-center justify-between gap-6 py-2">
+<p class="text-sm font-medium leading-normal text-text-light dark:text-text-dark">Source</p>
+<div class="text-text-light dark:text-text-dark group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined text-xl">expand_more</span>
+</div>
+</summary>
+<div class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal pb-2 pt-2">
+<p>Contenu du filtre de source à venir.</p>
+</div>
+</details>
+</div>
+<div class="flex px-4 py-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-congo-green text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Appliquer les filtres</span>
+</button>
+</div>
+<div class="px-4 py-3 border-t border-border-light dark:border-border-dark">
+<h3 class="text-base font-bold text-text-light dark:text-text-dark">2 Résultats</h3>
+</div>
+<div class="flex flex-col gap-4 px-4 pb-24">
+<div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<input checked="" class="mt-1 h-5 w-5 rounded border-2 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0 text-congo-green checked:bg-congo-green checked:bg-[image:--checkbox-tick-svg] border-border-light dark:border-border-dark checked:border-congo-green focus:border-border-light dark:focus:border-border-dark shrink-0" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<h4 class="font-bold text-base text-text-light dark:text-text-dark">Taux de scolarisation par province</h4>
+<p class="text-sm mt-1 text-subtext-light dark:text-subtext-dark">Données annuelles sur le taux de scolarisation dans l'enseignement primaire et secondaire.</p>
+<div class="flex items-center gap-4 mt-3 text-xs text-subtext-light dark:text-subtext-dark">
+<div class="flex items-center gap-1.5 bg-congo-yellow/20 text-congo-yellow-dark px-2 py-1 rounded-full text-[#b28e00]">
+<span class="material-symbols-outlined !text-sm">school</span>
+<span>Éducation</span>
+</div>
+<span>2018-2022</span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-4">
+<input class="mt-1 h-5 w-5 rounded border-2 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0 text-congo-green checked:bg-congo-green checked:bg-[image:--checkbox-tick-svg] border-border-light dark:border-border-dark checked:border-congo-green focus:border-border-light dark:focus:border-border-dark shrink-0" type="checkbox"/>
+<div class="flex flex-col flex-1">
+<h4 class="font-bold text-base text-text-light dark:text-text-dark">Indicateurs de santé maternelle</h4>
+<p class="text-sm mt-1 text-subtext-light dark:text-subtext-dark">Ensemble de données sur les indicateurs clés de la santé maternelle, y compris la mortalité.</p>
+<div class="flex items-center gap-4 mt-3 text-xs text-subtext-light dark:text-subtext-dark">
+<div class="flex items-center gap-1.5 bg-congo-red/20 text-congo-red px-2 py-1 rounded-full">
+<span class="material-symbols-outlined !text-sm">health_and_safety</span>
+<span>Santé</span>
+</div>
+<span>2020-2023</span>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-border-light dark:border-border-dark">
+<button class="w-full flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-congo-blue text-white text-base font-bold leading-normal tracking-[0.015em] gap-2">
+<span class="material-symbols-outlined">download</span>
+<span class="truncate">Télécharger la sélection (2)</span>
+</button>
+</div>
+</div>
+
+</body></html>
